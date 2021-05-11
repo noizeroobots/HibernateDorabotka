@@ -18,6 +18,9 @@ public class HibernateSessionCreator {
         return new Configuration()
                 .configure()
                 .addAnnotatedClass(Animal.class)
+                .addAnnotatedClass(Places.class)
+                .addAnnotatedClass(Workman.class)
+                .addAnnotatedClass(Zoo.class)
                 .buildSessionFactory();
     }
 }
